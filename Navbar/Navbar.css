@@ -1,0 +1,52 @@
+/* Navbar.css */
+
+/* Reset some default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the navbar */
+.navbar {
+    position: fixed;          /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;              /* Full width */
+    background-color: #333;   /* Background color */
+    padding: 15px 0;          /* Top and bottom spacing */
+    z-index: 1000;            /* Ensures it stays above other content */
+}
+
+/* Navigation menu list */
+.nav-menu {
+    display: flex;
+    justify-content: center;  /* Centers nav items horizontally */
+    list-style: none;
+    gap: 30px;                /* Space between items */
+}
+
+/* Individual navigation links */
+.nav-link {
+    color: white;             /* Text color */
+    text-decoration: none;    /* Remove underline */
+    font-size: 18px;
+    padding: 8px 12px;        /* Text spacing inside link */
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    background-color: #555;   /* Darker background on hover */
+    border-radius: 5px;
+}
+
+/* Active link style */
+.nav-link.active {
+    background-color: #0077cc;
+    border-radius: 5px;
+}

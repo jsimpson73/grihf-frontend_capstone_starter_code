@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/Navbar/Navbar.css">
+    <link rel="stylesheet" href="/Login/Login.css">
+</head>
+<body>
+    <!-- Navbar will load from Navbar.css -->
+
+    <div class="container">
+        <form action="#" method="post">
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" required>
+            <br>
+
+            <!-- Buttons -->
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+
+            <!-- Sign up link -->
+            <p class="signup-text">
+                Don’t have an account? <a href="/Sign-up/Sign-up.html">Sign Up</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

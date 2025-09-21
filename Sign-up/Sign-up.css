@@ -1,0 +1,95 @@
+/* Reset & consistency (inherits from Navbar.css reset) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;   /* Light background for contrast */
+    padding-top: 80px;           /* Prevent overlap with fixed navbar */
+}
+
+/* Form container */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input fields */
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+/* Input focus */
+form input:focus,
+form select:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+/* Buttons */
+form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+}
+
+/* Submit button */
+form button[type="submit"] {
+    background-color: #0077cc;
+    color: white;
+}
+
+form button[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+/* Reset button */
+form button[type="reset"] {
+    background-color: #555;
+    color: white;
+}
+
+form button[type="reset"]:hover {
+    background-color: #333;
+}
+
+/* Already a member text */
+.login-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-text a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-text a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
