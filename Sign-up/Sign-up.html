@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,8 @@
 </head>
 <body>
     
-    <div class="container">
+    <!-- Navbar -->
+    <div class="navbar-container">
         <nav class="navbar">   
             <ul class="nav-menu">
                 <li class="nav-item"><a href="/Navbar/Navbar.html" class="nav-link active">Home</a></li>
@@ -20,7 +21,8 @@
         </nav>
     </div>
 
-    <div class="container">
+    <!-- Form -->
+    <div class="form-container">
         <form action="#" method="post">
             
             <!-- Role -->
@@ -30,27 +32,22 @@
                 <option value="doctor">Doctor</option>
                 <option value="patient">Patient</option>
             </select>
-            <br>
 
             <!-- Name -->
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
 
             <!-- Phone Number -->
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
-            <br>
 
             <!-- Email -->
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
+            <input type="email" id="email" name="email" placeholder="email address" required>
 
             <!-- Password -->
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" minlength="6" required>
-            <br>
+            <input type="password" id="password" name="password" minlength="6" placeholder="password" required>
 
             <!-- Buttons -->
             <button type="submit">Submit</button>
@@ -58,7 +55,7 @@
 
             <!-- Already a member -->
             <p class="login-text">
-                Already a member? <a href="login.html">Login</a>
+                Already a member? <a href="/Login/Login.html">Login</a>
             </p>
         </form>
     </div>

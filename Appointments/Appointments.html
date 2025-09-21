@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appointments</title>
+  <link rel="stylesheet" href="/Navbar/Navbar.css">
+  <link rel="stylesheet" href="/Appointments/Appointments.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar-container">
+    <nav class="navbar">   
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="/Navbar/Navbar.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/Appointments/Appointments.html" class="nav-link active">Appointments</a></li>
+        <li class="nav-item"><a href="/Sign-up/Sign-up.html" class="nav-link">Sign Up</a></li>
+        <li class="nav-item"><a href="/Login/Login.html" class="nav-link">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Appointment Form -->
+  <div class="form-container">
+    <h2>Book an Appointment</h2>
+    <form action="#" method="post">
+
+      <!-- Patient Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter full name" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+      <!-- Phone -->
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+
+      <!-- Date -->
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <!-- Time -->
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <!-- Doctor Selection -->
+      <label for="doctor">Choose Doctor:</label>
+      <select id="doctor" name="doctor" required>
+        <option value="">--Select Doctor--</option>
+        <option value="smith">Dr. Smith</option>
+        <option value="johnson">Dr. Johnson</option>
+        <option value="williams">Dr. Williams</option>
+      </select>
+
+      <!-- Buttons -->
+      <button type="submit">Book Appointment</button>
+      <button type="reset">Reset</button>
+
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,12 +1,21 @@
-/* Reset & consistency (inherits from Navbar.css reset) */
+/* Sign-up.css */
+/* Reset & consistency */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;   /* Light background for contrast */
     padding-top: 80px;           /* Prevent overlap with fixed navbar */
+    margin: 0;
 }
 
-/* Form container */
-.container {
+/* Navbar container stays full width */
+.navbar-container {
+    width: 100%;
+    background: #0077cc; /* Or your navbar color */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Form container (the card) */
+.form-container {
     max-width: 400px;
     margin: 50px auto;
     background: white;
@@ -23,7 +32,7 @@ form label {
     color: #333;
 }
 
-/* Input fields */
+/* Inputs & Select */
 form input,
 form select {
     width: 100%;
